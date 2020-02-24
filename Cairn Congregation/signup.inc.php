@@ -13,7 +13,7 @@
         header("Location: ../signup.php?error=emptyfields&userid=".$userName."&email=".$email);
         exit();
     }
-    else if(!filter_var($email,FILTER_VALIDATE_EMAIL && !preg_match("/^[a-zA-Z0-9]*$/",$userName)){
+    else if(!filter_var($email,FILTER_VALIDATE_EMAIL && !preg_match("/^[a-zA-Z0-9]*$/",$userName))){
         header("Location: ../signup.php?error=invalidemailuserid");
         exit();
     }
