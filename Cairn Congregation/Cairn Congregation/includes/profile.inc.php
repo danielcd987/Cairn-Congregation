@@ -18,6 +18,7 @@ include 'includes/dbh.inc.php';
                     $sqlpic = "SELECT * FROM profilepic WHERE id_users = '$id';"; 
                     $resultspic = mysqli_query($conn, $sqlpic); //connects and displays 
                     //upload profile pic
+                    if($resultspic !== false){
                         while($rowpic = mysqli_fetch_assoc($resultspic)){
                             echo"<div class = 'profilecontainer'>";
                                 if($rowpic['stats'] == 0){
@@ -40,6 +41,7 @@ include 'includes/dbh.inc.php';
                         else{
                             echo "There is an error";
                         } 
+                    }
                     
                     echo 
                     //displays in a table
