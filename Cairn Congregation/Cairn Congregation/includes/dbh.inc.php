@@ -6,7 +6,7 @@ and table columns.
 */
 
 //servernames and database names needed to connect
-$servername = "csinfo.cairn.edu";
+$servername = "localhost";
 $dBUsername = "dd288";
 $dBPassword = "DanielDeCarlo";
 $dBName = "dd288";
