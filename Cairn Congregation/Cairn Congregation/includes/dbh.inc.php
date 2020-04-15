@@ -8,9 +8,9 @@ and table columns.
 //servernames and database names needed to connect
 $servername = "csinfo.cairn.edu";
 $dBUsername = "dd288";
-$dBPassword = "";
-//$dBName = "dd288";
-$dBName = "cairncongregationlogin";
+$dBPassword = "DanielDeCarlo";
+$dBName = "dd288";
+//$dBName = "cairncongregationlogin";
 
 //connects database
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword,$dBName);
