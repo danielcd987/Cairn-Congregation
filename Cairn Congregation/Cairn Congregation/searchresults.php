@@ -33,11 +33,14 @@
                         <th>UserName:</th>
                         <th>Occupation:</th>
                         <th>Age:</th>
+                        <th>Feeling:</th>
                     </tr>
                     <tr>
                         <td><h5 class = 'records'>".$row['UserNames']."</h5></td>
                         <td><h5 class = 'records'>".$row['occ']."</h5></td>
                         <td><h5 class = 'records'>".$row['age']."</h5></td>
+                        <td><h5 class = 'records'>".$row['stats']."</h5></td>
+
                     </tr>
                 </table>";
                 }
