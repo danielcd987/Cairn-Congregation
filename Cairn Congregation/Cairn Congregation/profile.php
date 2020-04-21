@@ -19,11 +19,11 @@ include "includes/dbh.inc.php"; //includes DB connection
                 <button type = "submit" name = "editprofile">Edit Profile</button>
             </form>';
         
-            echo'<br>
-                <form action = "uploads.php" method = "POST" enctype = "multipart/form-data"> 
-                    <input type = "file" name = "uploadfile">
-                    <button type = "submit" name = "submitfile">Upload</button>
-                </form>';
+//             echo'<br>
+//                 <form action = "uploads.php" method = "POST" enctype = "multipart/form-data"> 
+//                     <input type = "file" name = "uploadfile">
+//                     <button type = "submit" name = "submitfile">Upload</button>
+//                 </form>';
             echo '<br>';
 
             echo'
