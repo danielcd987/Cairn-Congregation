@@ -52,12 +52,12 @@ include "includes/dbh.inc.php"; //includes DB connection
             <form action = "includes/editprofile.inc.php" method = "post" >
                     <input name = "id_user" placeholder = "ID Number" id = "IdNum" value = "<?php echo $_SESSION['userId']; ?>" hidden >  <br> <br>
                     <input type = "text" name = "userid" placeholder = "UserName" id = "user"> <br> <br>
-                    <input type = "text" name = "email" placeholder = "Email" id = "email"> <br> <br>
+                    <input type = "text" name = "email" placeholder = "Email" id = "email" value = "<?php echo $_SESSION['email']; ?>"> <br> <br>
                     <input type = "password" name = "pswd" placeholder = "Password"> <br> <br>
                     <input type = "password" name = "pswd2" placeholder = "Re-enter Password"> <br> <br>
-                    <input type = "tel" name = "phonenumber" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder = "Enter Phone Number"> <br> <br>
-                    <input type = "text" name = "occupation" placeholder = "Occupation" id = "occ"> <br> <br>
-                    <input type = "number" name = "age" placeholder = "Age" id = "age"> <br> <br>
+                    <input type = "tel" name = "phonenumber" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder = "Enter Phone Number" value = "<?php echo  $_SESSION['phonenumber']; ?>" > <br> <br>
+                    <input type = "text" name = "occupation" placeholder = "Occupation" id = "occ" value = "<?php echo  $_SESSION['occupation']; ?>"> <br> <br>
+                    <input type = "number" name = "age" placeholder = "Age" id = "age" value = "<?php echo  $_SESSION['ages']; ?>" > <br> <br>
                     <button type = "submit" name = "update">Update Profile</button> 
             </form>
       </div>
