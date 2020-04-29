@@ -29,10 +29,10 @@
                         </div>
                     </form>';
             echo '<br>';
+            echo '<p>If you do not have a profile please go to the <a href = "signup.php">sign up</a> page.</p>';
         }
     ?>
 </div>
-<!--<p>If you don't have a profile please go to the <a href = "signup.php">sign up</a> page.</p>-->
 </main>
 
 <?php
