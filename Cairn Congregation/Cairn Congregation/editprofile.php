@@ -29,6 +29,7 @@ include "includes/dbh.inc.php"; //includes DB connection
                 echo $_GET['updateprofile'];
                 if($_GET['updateprofile'] == "success"){
                     echo '<p class = "successsignup"> Profile Updated</p>';
+                    
                 }
             }
             // else if ($_GET['updateprofile'] == 'success'){ 
@@ -36,19 +37,6 @@ include "includes/dbh.inc.php"; //includes DB connection
             // }
         ?>
 
-        <!-- displays users id number -->
-        <!-- <?php
-            
-            // $sql = "SELECT id_users FROM users";
-            // $results = mysqli_query($conn, $sql);
-            // $RESULTCHECK = mysqli_num_rows($results);
-
-            // if($RESULTCHECK > 0){
-            //     while($row = mysqli_fetch_assoc($results)){ //have the search results go to profile
-            //         echo "<p>Your ID Number is:</p>".$row['id_users'];
-            //     }
-            // }
-    ?> -->
             <form action = "includes/editprofile.inc.php" method = "post" >
                     <input name = "id_user" placeholder = "ID Number" id = "IdNum" value = "<?php echo $_SESSION['userId']; ?>" hidden >  <br> <br>
                     <input type = "text" name = "userid" placeholder = "UserName" id = "user" value = "<?php echo $_SESSION['userUid']; ?>"> <br> <br>
