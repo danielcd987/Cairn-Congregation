@@ -32,8 +32,13 @@ if(isset($_POST['login-submit'])){ //checks to see if the buton was clicked
                }
                else if($passwordchk == true){
                    session_start(); 
-                   $_SESSION['userId'] = $row['id_users']; //checks input username and compares to table
-                   $_SESSION['userUid'] = $row['UserNames']; //checks password and compares it to table
+                   $_SESSION['userId'] = $row['id_users']; //gets id number from table
+                   $_SESSION['userUid'] = $row['UserNames']; //gets the username
+                   $_SESSION['email'] = $row['email_users']; //gets email from table
+//                    $_SESSION['pwduser'] = $row['pwdusers']; 
+                   $_SESSION['phonenumber'] = $row['phonenum'];//gets phone num from table
+                   $_SESSION['occupation'] = $row['occ'];//gets occupation  from table
+                   $_SESSION['ages'] = $row['age']; //gets age from table
                    header("Location: ../login.php?login=success");
                    exit(); 
                }
