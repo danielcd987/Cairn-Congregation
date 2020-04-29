@@ -32,7 +32,7 @@
         }
     ?>
 </div>
-<p>If you don't have a profile please go to the <a href = "signup.php">sign up</a> page.</p>
+<!--<p>If you don't have a profile please go to the <a href = "signup.php">sign up</a> page.</p>-->
 </main>
 
 <?php
