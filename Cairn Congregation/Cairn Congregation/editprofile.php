@@ -29,6 +29,8 @@ include "includes/dbh.inc.php"; //includes DB connection
                 echo $_GET['updateprofile'];
                 if($_GET['updateprofile'] == "success"){
                     echo '<p class = "successsignup"> Profile Updated</p>';
+                    echo 'In order to see your updated profile, please <a href = "login.php">log out</a> then log back in!';
+
                     
                 }
             }
