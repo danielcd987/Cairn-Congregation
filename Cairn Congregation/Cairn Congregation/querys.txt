@@ -7,5 +7,6 @@ email_users TINYTEXT NOT NULL,
 pwdusers LONGTEXT NOT NULL,
 phonenum int(255),
 occ VARCHAR(255),
-age INT(3)
+age INT(3),
+stats VARCHAR(50)
 );

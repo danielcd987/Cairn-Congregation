@@ -7,9 +7,9 @@ and table columns.
 
 //servernames and database names needed to connect
 $servername = "localhost";
-$dBUsername = "dd288";
-$dBPassword = "DanielDeCarlo";
-$dBName = "dd288";
+$dBUsername = "root";
+$dBPassword = "";
+$dBName = "cairn_congregation";
 //$dBName = "cairncongregationlogin";
 
 //connects database
